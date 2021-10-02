@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -130,9 +130,8 @@
 		8E1DD71926F0FD64000718E5 /* ishinuma */ = {
 			isa = PBXGroup;
 			children = (
+				8E8A1EE427083FB800D8EDEA /* App */,
 				8E80FC5526F9AA4600D51803 /* Screen */,
-				8E1DD71A26F0FD64000718E5 /* AppDelegate.swift */,
-				8E1DD71C26F0FD64000718E5 /* SceneDelegate.swift */,
 				8E1DD72326F0FD64000718E5 /* Assets.xcassets */,
 				8E1DD72526F0FD64000718E5 /* LaunchScreen.storyboard */,
 				8E1DD72826F0FD64000718E5 /* Info.plist */,
@@ -193,6 +192,15 @@
 			path = Builder;
 			sourceTree = "<group>";
 		};
+		8E8A1EE427083FB800D8EDEA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8E1DD71A26F0FD64000718E5 /* AppDelegate.swift */,
+				8E1DD71C26F0FD64000718E5 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		CAA7CE66223495BF71AD7313 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,7 +211,6 @@
 				01BEF9DB779F3B9DE9E03DFA /* Pods-ishinumaTests.debug.xcconfig */,
 				FBFA5E44A890CD1F7E15E092 /* Pods-ishinumaTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
