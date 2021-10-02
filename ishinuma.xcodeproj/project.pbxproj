@@ -18,6 +18,8 @@
 		8E1DD73D26F0FD65000718E5 /* ishinumaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DD73C26F0FD65000718E5 /* ishinumaUITests.swift */; };
 		8E80FC5426F9AA4100D51803 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E80FC5326F9AA4100D51803 /* FeedViewController.xib */; };
 		8E80FC5A26F9AE3C00D51803 /* FeedBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80FC5926F9AE3C00D51803 /* FeedBuilder.swift */; };
+		8E8A1EEA270844CB00D8EDEA /* StoresModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A1EE9270844CB00D8EDEA /* StoresModel.swift */; };
+		8E8A1EEC2708483B00D8EDEA /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A1EEB2708483B00D8EDEA /* FeedViewModel.swift */; };
 		8EBD909C27083B9300CAEF80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EBD909B27083B9300CAEF80 /* GoogleService-Info.plist */; };
 		B2B56BDA3A3376464B465C0E /* Pods_ishinuma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C91A0C1C33BF529149AEDAE /* Pods_ishinuma.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +63,8 @@
 		8E1DD73E26F0FD65000718E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E80FC5326F9AA4100D51803 /* FeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 		8E80FC5926F9AE3C00D51803 /* FeedBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBuilder.swift; sourceTree = "<group>"; };
+		8E8A1EE9270844CB00D8EDEA /* StoresModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresModel.swift; sourceTree = "<group>"; };
+		8E8A1EEB2708483B00D8EDEA /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		8EBD909B27083B9300CAEF80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B16002AA752CD0009F20645D /* Pods_ishinumaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ishinumaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C7F0914D25110FCE19FA1A /* Pods-ishinuma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ishinuma.debug.xcconfig"; path = "Target Support Files/Pods-ishinuma/Pods-ishinuma.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 			children = (
 				8E8A1EE427083FB800D8EDEA /* App */,
 				8E80FC5526F9AA4600D51803 /* Screen */,
+				8E8A1EE72708449400D8EDEA /* Model */,
 				8E1DD72326F0FD64000718E5 /* Assets.xcassets */,
 				8E1DD72526F0FD64000718E5 /* LaunchScreen.storyboard */,
 				8E1DD72826F0FD64000718E5 /* Info.plist */,
@@ -169,8 +174,10 @@
 		8E80FC5626F9AA5200D51803 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				8E8A1EE62708441400D8EDEA /* Router */,
 				8E80FC5826F9AB6000D51803 /* Builder */,
 				8E80FC5726F9AB5800D51803 /* View */,
+				8E8A1EE52708417E00D8EDEA /* ViewModel */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -199,6 +206,37 @@
 				8E1DD71C26F0FD64000718E5 /* SceneDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		8E8A1EE52708417E00D8EDEA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8E8A1EEB2708483B00D8EDEA /* FeedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8E8A1EE62708441400D8EDEA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8E8A1EE72708449400D8EDEA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E8A1EE8270844B700D8EDEA /* Stores */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E8A1EE8270844B700D8EDEA /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				8E8A1EE9270844CB00D8EDEA /* StoresModel.swift */,
+			);
+			path = Stores;
 			sourceTree = "<group>";
 		};
 		CAA7CE66223495BF71AD7313 /* Pods */ = {
@@ -454,6 +492,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E1DD71F26F0FD64000718E5 /* FeedViewController.swift in Sources */,
+				8E8A1EEA270844CB00D8EDEA /* StoresModel.swift in Sources */,
+				8E8A1EEC2708483B00D8EDEA /* FeedViewModel.swift in Sources */,
 				8E1DD71B26F0FD64000718E5 /* AppDelegate.swift in Sources */,
 				8E1DD71D26F0FD64000718E5 /* SceneDelegate.swift in Sources */,
 				8E80FC5A26F9AE3C00D51803 /* FeedBuilder.swift in Sources */,
