@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5624B3CE5363740D54981134 /* Pods_ishinumaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16002AA752CD0009F20645D /* Pods_ishinumaTests.framework */; };
+		7F080E29AF5947C4EC53091F /* Pods_ishinuma_ishinumaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184071FF1165850D8D742AE2 /* Pods_ishinuma_ishinumaUITests.framework */; };
 		8E1DD71B26F0FD64000718E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DD71A26F0FD64000718E5 /* AppDelegate.swift */; };
 		8E1DD71D26F0FD64000718E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DD71C26F0FD64000718E5 /* SceneDelegate.swift */; };
 		8E1DD71F26F0FD64000718E5 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DD71E26F0FD64000718E5 /* FeedViewController.swift */; };
@@ -16,6 +18,8 @@
 		8E1DD73D26F0FD65000718E5 /* ishinumaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DD73C26F0FD65000718E5 /* ishinumaUITests.swift */; };
 		8E80FC5426F9AA4100D51803 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E80FC5326F9AA4100D51803 /* FeedViewController.xib */; };
 		8E80FC5A26F9AE3C00D51803 /* FeedBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80FC5926F9AE3C00D51803 /* FeedBuilder.swift */; };
+		8EBD909C27083B9300CAEF80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EBD909B27083B9300CAEF80 /* GoogleService-Info.plist */; };
+		B2B56BDA3A3376464B465C0E /* Pods_ishinuma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C91A0C1C33BF529149AEDAE /* Pods_ishinuma.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01BEF9DB779F3B9DE9E03DFA /* Pods-ishinumaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ishinumaTests.debug.xcconfig"; path = "Target Support Files/Pods-ishinumaTests/Pods-ishinumaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		184071FF1165850D8D742AE2 /* Pods_ishinuma_ishinumaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ishinuma_ishinumaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C91A0C1C33BF529149AEDAE /* Pods_ishinuma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ishinuma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E6890422187DA3667CB279C /* Pods-ishinuma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ishinuma.release.xcconfig"; path = "Target Support Files/Pods-ishinuma/Pods-ishinuma.release.xcconfig"; sourceTree = "<group>"; };
+		481AFBA1F60DE6A877B29454 /* Pods-ishinuma-ishinumaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ishinuma-ishinumaUITests.debug.xcconfig"; path = "Target Support Files/Pods-ishinuma-ishinumaUITests/Pods-ishinuma-ishinumaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8363D2A349F41FF9BA1117DB /* Pods-ishinuma-ishinumaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ishinuma-ishinumaUITests.release.xcconfig"; path = "Target Support Files/Pods-ishinuma-ishinumaUITests/Pods-ishinuma-ishinumaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8E1DD71726F0FD64000718E5 /* ishinuma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ishinuma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1DD71A26F0FD64000718E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E1DD71C26F0FD64000718E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +61,10 @@
 		8E1DD73E26F0FD65000718E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E80FC5326F9AA4100D51803 /* FeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 		8E80FC5926F9AE3C00D51803 /* FeedBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBuilder.swift; sourceTree = "<group>"; };
+		8EBD909B27083B9300CAEF80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B16002AA752CD0009F20645D /* Pods_ishinumaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ishinumaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3C7F0914D25110FCE19FA1A /* Pods-ishinuma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ishinuma.debug.xcconfig"; path = "Target Support Files/Pods-ishinuma/Pods-ishinuma.debug.xcconfig"; sourceTree = "<group>"; };
+		FBFA5E44A890CD1F7E15E092 /* Pods-ishinumaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ishinumaTests.release.xcconfig"; path = "Target Support Files/Pods-ishinumaTests/Pods-ishinumaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B56BDA3A3376464B465C0E /* Pods_ishinuma.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5624B3CE5363740D54981134 /* Pods_ishinumaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +88,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F080E29AF5947C4EC53091F /* Pods_ishinuma_ishinumaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A808268E2D70F82E23033E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C91A0C1C33BF529149AEDAE /* Pods_ishinuma.framework */,
+				184071FF1165850D8D742AE2 /* Pods_ishinuma_ishinumaUITests.framework */,
+				B16002AA752CD0009F20645D /* Pods_ishinumaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8E1DD70E26F0FD64000718E5 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +112,8 @@
 				8E1DD73026F0FD65000718E5 /* ishinumaTests */,
 				8E1DD73B26F0FD65000718E5 /* ishinumaUITests */,
 				8E1DD71826F0FD64000718E5 /* Products */,
+				CAA7CE66223495BF71AD7313 /* Pods */,
+				5A808268E2D70F82E23033E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +136,7 @@
 				8E1DD72326F0FD64000718E5 /* Assets.xcassets */,
 				8E1DD72526F0FD64000718E5 /* LaunchScreen.storyboard */,
 				8E1DD72826F0FD64000718E5 /* Info.plist */,
+				8EBD909B27083B9300CAEF80 /* GoogleService-Info.plist */,
 			);
 			path = ishinuma;
 			sourceTree = "<group>";
@@ -163,6 +193,20 @@
 			path = Builder;
 			sourceTree = "<group>";
 		};
+		CAA7CE66223495BF71AD7313 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3C7F0914D25110FCE19FA1A /* Pods-ishinuma.debug.xcconfig */,
+				2E6890422187DA3667CB279C /* Pods-ishinuma.release.xcconfig */,
+				481AFBA1F60DE6A877B29454 /* Pods-ishinuma-ishinumaUITests.debug.xcconfig */,
+				8363D2A349F41FF9BA1117DB /* Pods-ishinuma-ishinumaUITests.release.xcconfig */,
+				01BEF9DB779F3B9DE9E03DFA /* Pods-ishinumaTests.debug.xcconfig */,
+				FBFA5E44A890CD1F7E15E092 /* Pods-ishinumaTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E1DD74126F0FD65000718E5 /* Build configuration list for PBXNativeTarget "ishinuma" */;
 			buildPhases = (
+				60FF45AF7368508927BEA289 /* [CP] Check Pods Manifest.lock */,
 				8E1DD71326F0FD64000718E5 /* Sources */,
 				8E1DD71426F0FD64000718E5 /* Frameworks */,
 				8E1DD71526F0FD64000718E5 /* Resources */,
+				A1EFEBA20FE6C14F3A8824D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -187,6 +233,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E1DD74426F0FD65000718E5 /* Build configuration list for PBXNativeTarget "ishinumaTests" */;
 			buildPhases = (
+				652E6A0B96D281EB8F4C7F19 /* [CP] Check Pods Manifest.lock */,
 				8E1DD72926F0FD65000718E5 /* Sources */,
 				8E1DD72A26F0FD65000718E5 /* Frameworks */,
 				8E1DD72B26F0FD65000718E5 /* Resources */,
@@ -205,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E1DD74726F0FD65000718E5 /* Build configuration list for PBXNativeTarget "ishinumaUITests" */;
 			buildPhases = (
+				CC2E6F8CAAD0E781D3A3E1A2 /* [CP] Check Pods Manifest.lock */,
 				8E1DD73426F0FD65000718E5 /* Sources */,
 				8E1DD73526F0FD65000718E5 /* Frameworks */,
 				8E1DD73626F0FD65000718E5 /* Resources */,
+				55739A28D16F4428D0FB7F8F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -267,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E1DD72726F0FD64000718E5 /* LaunchScreen.storyboard in Resources */,
+				8EBD909C27083B9300CAEF80 /* GoogleService-Info.plist in Resources */,
 				8E80FC5426F9AA4100D51803 /* FeedViewController.xib in Resources */,
 				8E1DD72426F0FD64000718E5 /* Assets.xcassets in Resources */,
 			);
@@ -287,6 +337,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55739A28D16F4428D0FB7F8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ishinuma-ishinumaUITests/Pods-ishinuma-ishinumaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ishinuma-ishinumaUITests/Pods-ishinuma-ishinumaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ishinuma-ishinumaUITests/Pods-ishinuma-ishinumaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60FF45AF7368508927BEA289 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ishinuma-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		652E6A0B96D281EB8F4C7F19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ishinumaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1EFEBA20FE6C14F3A8824D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ishinuma/Pods-ishinuma-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ishinuma/Pods-ishinuma-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ishinuma/Pods-ishinuma-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC2E6F8CAAD0E781D3A3E1A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ishinuma-ishinumaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8E1DD71326F0FD64000718E5 /* Sources */ = {
@@ -461,6 +614,7 @@
 		};
 		8E1DD74226F0FD65000718E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3C7F0914D25110FCE19FA1A /* Pods-ishinuma.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -480,6 +634,7 @@
 		};
 		8E1DD74326F0FD65000718E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E6890422187DA3667CB279C /* Pods-ishinuma.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -499,6 +654,7 @@
 		};
 		8E1DD74526F0FD65000718E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01BEF9DB779F3B9DE9E03DFA /* Pods-ishinumaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -521,6 +677,7 @@
 		};
 		8E1DD74626F0FD65000718E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBFA5E44A890CD1F7E15E092 /* Pods-ishinumaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -543,6 +700,7 @@
 		};
 		8E1DD74826F0FD65000718E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 481AFBA1F60DE6A877B29454 /* Pods-ishinuma-ishinumaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +721,7 @@
 		};
 		8E1DD74926F0FD65000718E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8363D2A349F41FF9BA1117DB /* Pods-ishinuma-ishinumaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

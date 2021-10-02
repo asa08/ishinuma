@@ -1,0 +1,6 @@
+framework module Pods_ishinumaTests {
+  umbrella header "Pods-ishinumaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
