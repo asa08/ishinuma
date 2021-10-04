@@ -31,4 +31,8 @@ class FeedViewModel: FeedViewModelType, FeedViewModelInputs, FeedViewModelOutput
     init(wierframe: FeedWireframe) {
         self.wierframe = wierframe
     }
+    
+    private func get() {
+        
+    }
 }
