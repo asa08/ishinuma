@@ -6,13 +6,16 @@
 //
 
 import Foundation
+import Combine
 
+// MARK: Input
 protocol FeedViewModelInputs {
     
 }
 
+// MARK: Outputs
 protocol FeedViewModelOutputs {
-    
+    var stores: CurrentValueSubject<[StoreModel], Never> { get }
 }
 
 protocol FeedViewModelType {
@@ -25,14 +28,16 @@ class FeedViewModel: FeedViewModelType, FeedViewModelInputs, FeedViewModelOutput
     // MARK: Properties
     var input: FeedViewModelInputs { return self }
     var output: FeedViewModelOutputs { return self }
+    var stores = CurrentValueSubject<[StoreModel], Never>([])
     
     let wierframe: FeedWireframe
     
     init(wierframe: FeedWireframe) {
         self.wierframe = wierframe
+        get()
     }
     
     private func get() {
-        
+        stores.value = StoreModel.get()
     }
 }

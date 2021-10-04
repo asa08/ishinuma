@@ -17,7 +17,7 @@ struct StoreModel: Codable {
 }
 
 extension StoreModel {
-    func get() -> [StoreModel] {
+    static func get() -> [StoreModel] {
         let store = StoreModel(id: 1, name: "名前", hasStore: false, hasAppraiser: true)
         return [store]
     }
