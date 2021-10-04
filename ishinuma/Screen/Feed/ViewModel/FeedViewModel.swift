@@ -26,5 +26,9 @@ class FeedViewModel: FeedViewModelType, FeedViewModelInputs, FeedViewModelOutput
     var input: FeedViewModelInputs { return self }
     var output: FeedViewModelOutputs { return self }
     
+    let wierframe: FeedWireframe
     
+    init(wierframe: FeedWireframe) {
+        self.wierframe = wierframe
+    }
 }
