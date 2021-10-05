@@ -27,6 +27,7 @@
 		8E8A1F02270CA8C100D8EDEA /* FeedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A1F01270CA8C100D8EDEA /* FeedTableView.swift */; };
 		8E8A1F04270CA98500D8EDEA /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A1F03270CA98500D8EDEA /* FeedTableViewCell.swift */; };
 		8E8A1F06270CA98C00D8EDEA /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E8A1F05270CA98C00D8EDEA /* FeedTableViewCell.xib */; };
+		8E8A1F09270CB0E900D8EDEA /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8A1F08270CB0E900D8EDEA /* R.generated.swift */; };
 		8EBD909C27083B9300CAEF80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EBD909B27083B9300CAEF80 /* GoogleService-Info.plist */; };
 		B2B56BDA3A3376464B465C0E /* Pods_ishinuma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C91A0C1C33BF529149AEDAE /* Pods_ishinuma.framework */; };
 /* End PBXBuildFile section */
@@ -79,6 +80,7 @@
 		8E8A1F01270CA8C100D8EDEA /* FeedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableView.swift; sourceTree = "<group>"; };
 		8E8A1F03270CA98500D8EDEA /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		8E8A1F05270CA98C00D8EDEA /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		8E8A1F08270CB0E900D8EDEA /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		8EBD909B27083B9300CAEF80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B16002AA752CD0009F20645D /* Pods_ishinumaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ishinumaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C7F0914D25110FCE19FA1A /* Pods-ishinuma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ishinuma.debug.xcconfig"; path = "Target Support Files/Pods-ishinuma/Pods-ishinuma.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				8E1DD72526F0FD64000718E5 /* LaunchScreen.storyboard */,
 				8E1DD72826F0FD64000718E5 /* Info.plist */,
 				8EBD909B27083B9300CAEF80 /* GoogleService-Info.plist */,
+				8E8A1F08270CB0E900D8EDEA /* R.generated.swift */,
 			);
 			path = ishinuma;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			buildConfigurationList = 8E1DD74126F0FD65000718E5 /* Build configuration list for PBXNativeTarget "ishinuma" */;
 			buildPhases = (
 				60FF45AF7368508927BEA289 /* [CP] Check Pods Manifest.lock */,
+				8E8A1F07270CB01400D8EDEA /* ShellScript */,
 				8E1DD71326F0FD64000718E5 /* Sources */,
 				8E1DD71426F0FD64000718E5 /* Frameworks */,
 				8E1DD71526F0FD64000718E5 /* Resources */,
@@ -491,6 +495,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8E8A1F07270CB01400D8EDEA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 		A1EFEBA20FE6C14F3A8824D2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -543,6 +566,7 @@
 				8E8A1EEA270844CB00D8EDEA /* StoresModel.swift in Sources */,
 				8E8A1EEC2708483B00D8EDEA /* FeedViewModel.swift in Sources */,
 				8E8A1EEE27084B1300D8EDEA /* FeedRouter.swift in Sources */,
+				8E8A1F09270CB0E900D8EDEA /* R.generated.swift in Sources */,
 				8E1DD71B26F0FD64000718E5 /* AppDelegate.swift in Sources */,
 				8E8A1EFC270B45B100D8EDEA /* Combine+UITextView.swift in Sources */,
 				8E1DD71D26F0FD64000718E5 /* SceneDelegate.swift in Sources */,

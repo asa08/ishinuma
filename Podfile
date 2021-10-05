@@ -6,6 +6,7 @@ target 'ishinuma' do
   use_frameworks!
 
   pod 'Firebase/Analytics'
+  pod 'R.swift'
 
   target 'ishinumaTests' do
     inherit! :search_paths
