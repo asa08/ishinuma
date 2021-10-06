@@ -9,6 +9,10 @@ import UIKit
 
 class FeedTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var iconImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var infoStackView: UIStackView!
+    
     func initSelf(store: StoreModel) {
         
     }
