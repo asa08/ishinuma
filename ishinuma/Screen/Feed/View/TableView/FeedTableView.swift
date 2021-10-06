@@ -13,5 +13,6 @@ class FeedTableView: UITableView {
     
     func initSelf(viewModel: FeedViewModel) {
         self.viewModel = viewModel
+        register(R.nib.feedTableViewCell)
     }
 }
