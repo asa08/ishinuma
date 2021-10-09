@@ -14,6 +14,29 @@ class FeedTableViewCell: UITableViewCell {
     @IBOutlet weak var infoStackView: UIStackView!
     
     func initSelf(store: StoreModel) {
-        
+        setIconImageView(store)
+        setNameLabel(store)
+    }
+    
+    private func setIconImageView(_ store: StoreModel) {
+        iconImageView.contentMode = .scaleAspectFit
+        guard let url = store.iconUrl else { return }
+        iconImageView.image = UIImage(url: url)
+    }
+    
+    private func setNameLabel(_ store: StoreModel) {
+        nameLabel.font = .systemFont(ofSize: 15)
+        nameLabel.textColor = .darkGray
+        nameLabel.text = store.name
+    }
+    
+    private func setInfoStackView(_ store: StoreModel) {
+        infoStackView.arrangedSubviews.forEach({
+            infoStackView.removeArrangedSubview($0)
+            $0.removeFromSuperview()
+        })
+        store.infos.forEach({ _ in
+            
+        })
     }
 }
