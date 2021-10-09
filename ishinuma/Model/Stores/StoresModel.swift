@@ -32,6 +32,14 @@ enum StoreInfoKey: String {
         case .onlineStore: return R.image.onlineShop()
         }
     }
+    
+    var backgroundColor: UIColor {
+        switch self {
+        case .store: return .RGB(0xf08080)
+        case .onlineStore: return .RGB(0xf08080)
+        case .instagram: return .RGB(0xf08080)
+        }
+    }
 }
 
 extension StoreModel {
