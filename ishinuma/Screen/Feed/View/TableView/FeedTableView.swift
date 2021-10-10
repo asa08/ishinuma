@@ -15,13 +15,18 @@ class FeedTableView: UITableView {
     
     func initSelf(viewModel: FeedViewModel) {
         self.viewModel = viewModel
-        register(R.nib.feedTableViewCell)
-        delegate = self
-        dataSource = self
+        setTableView()
         viewModel.output.stores.sink(receiveValue: { [weak self] _ in
             self?.reloadData()
         }).store(in: &cancellables)
-        reloadData()
+    }
+    
+    private func setTableView() {
+        register(R.nib.feedTableViewCell)
+        delegate = self
+        dataSource = self
+        estimatedRowHeight = 55
+        rowHeight = 55
     }
 }
 
@@ -38,6 +43,7 @@ extension FeedTableView: UITableViewDataSource {
         if let cell = dequeueReusableCell(withIdentifier: R.nib.feedTableViewCell.identifier) as? FeedTableViewCell {
             guard let store = viewModel?.output.stores.value[indexPath.row] else { return cell }
             cell.initSelf(store: store)
+            cell.selectionStyle = .none
             return cell
         }
         return UITableViewCell()

@@ -16,10 +16,13 @@ class FeedTableViewCell: UITableViewCell {
     func initSelf(store: StoreModel) {
         setIconImageView(store)
         setNameLabel(store)
+        setInfoStackView(store)
     }
     
     private func setIconImageView(_ store: StoreModel) {
         iconImageView.contentMode = .scaleAspectFit
+        iconImageView.layer.cornerRadius = iconImageView.frame.height / 2
+        iconImageView.image = R.image.placeHolder()
         guard let url = store.iconUrl else { return }
         iconImageView.image = UIImage(url: url)
     }

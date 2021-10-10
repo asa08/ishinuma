@@ -15,10 +15,14 @@ class FeedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.view.backgroundColor = .white
-        title = "Stores"
+        setNavigation()
         guard let viewModel = viewModel else { return }
         tableView.initSelf(viewModel: viewModel)
+    }
+    
+    private func setNavigation() {
+        navigationController?.view.backgroundColor = .white
+        title = "Stores"
     }
     
     func initSelf(_ viewModel: FeedViewModel) {

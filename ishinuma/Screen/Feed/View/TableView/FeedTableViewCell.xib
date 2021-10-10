@@ -17,20 +17,20 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VxS-Z4-9Da">
-                        <rect key="frame" x="12" y="5" width="50" height="50"/>
+                        <rect key="frame" x="16" y="12.5" width="35" height="35"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="50" id="ON8-fO-Vju"/>
-                            <constraint firstAttribute="width" constant="50" id="i8q-0r-2V0"/>
+                            <constraint firstAttribute="height" constant="35" id="ON8-fO-Vju"/>
+                            <constraint firstAttribute="width" constant="35" id="i8q-0r-2V0"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bga-E7-EtZ">
-                        <rect key="frame" x="66" y="9" width="336" height="21"/>
+                        <rect key="frame" x="63" y="9" width="339" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mAA-gG-Mqh">
-                        <rect key="frame" x="66" y="30" width="336" height="20"/>
+                        <rect key="frame" x="63" y="30" width="339" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="eB2-5E-ocN"/>
                         </constraints>
@@ -39,12 +39,12 @@
                 <constraints>
                     <constraint firstItem="mAA-gG-Mqh" firstAttribute="top" secondItem="Bga-E7-EtZ" secondAttribute="bottom" id="ICk-zA-Dxu"/>
                     <constraint firstAttribute="centerY" secondItem="Bga-E7-EtZ" secondAttribute="bottom" id="JHh-ze-jS8"/>
-                    <constraint firstItem="mAA-gG-Mqh" firstAttribute="leading" secondItem="VxS-Z4-9Da" secondAttribute="trailing" constant="4" id="Kbu-6S-zK1"/>
+                    <constraint firstItem="mAA-gG-Mqh" firstAttribute="leading" secondItem="VxS-Z4-9Da" secondAttribute="trailing" constant="12" id="Kbu-6S-zK1"/>
                     <constraint firstAttribute="trailing" secondItem="mAA-gG-Mqh" secondAttribute="trailing" constant="12" id="Vq3-dP-RHM"/>
                     <constraint firstAttribute="trailing" secondItem="Bga-E7-EtZ" secondAttribute="trailing" constant="12" id="e4o-2i-CGY"/>
-                    <constraint firstItem="VxS-Z4-9Da" firstAttribute="leading" secondItem="6oM-Vj-X9g" secondAttribute="leading" constant="12" id="g4H-mq-REh"/>
+                    <constraint firstItem="VxS-Z4-9Da" firstAttribute="leading" secondItem="6oM-Vj-X9g" secondAttribute="leading" constant="16" id="g4H-mq-REh"/>
                     <constraint firstItem="VxS-Z4-9Da" firstAttribute="centerY" secondItem="6oM-Vj-X9g" secondAttribute="centerY" id="gd6-YI-s3h"/>
-                    <constraint firstItem="Bga-E7-EtZ" firstAttribute="leading" secondItem="VxS-Z4-9Da" secondAttribute="trailing" constant="4" id="x3C-q7-NhW"/>
+                    <constraint firstItem="Bga-E7-EtZ" firstAttribute="leading" secondItem="VxS-Z4-9Da" secondAttribute="trailing" constant="12" id="x3C-q7-NhW"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

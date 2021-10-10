@@ -38,7 +38,6 @@ class FeedViewModel: FeedViewModelType, FeedViewModelInputs, FeedViewModelOutput
     }
     
     private func get() {
-        let store = StoreModel.get()
         stores.value = StoreModel.get()
     }
 }
