@@ -22,6 +22,7 @@ class FeedTableViewCellInfos: UIView {
     
     private let imageView: UIImageView = {
         let view = UIImageView()
+        view.contentMode = .scaleAspectFit
         return view
     }()
     
@@ -35,6 +36,10 @@ class FeedTableViewCellInfos: UIView {
     }
     
     private func commonInit(_ store: StoreInfoModel) {
+        baseView.addSubview(titleLabel)
+        baseView.addSubview(imageView)
+        addSubview(baseView)
+        
         clearTranslates()
         makeAutolayout()
     }

@@ -24,12 +24,21 @@ enum StoreInfoKey: String {
     case store
     case onlineStore
     case instagram
+    case appraiser
     
     var image: UIImage? {
         switch self {
         case .instagram: return R.image.instagram()
         case .store: return R.image.shop()
         case .onlineStore: return R.image.onlineShop()
+        case .appraiser: return nil
+        }
+    }
+    
+    var text: String? {
+        switch self {
+        case .appraiser: return "鑑定士"
+        default: return nil
         }
     }
     
@@ -38,6 +47,7 @@ enum StoreInfoKey: String {
         case .store: return .RGB(0xf08080)
         case .onlineStore: return .RGB(0xf08080)
         case .instagram: return .RGB(0xf08080)
+        default: return .white
         }
     }
 }
