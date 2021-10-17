@@ -50,6 +50,6 @@ extension StoreModel {
             StoreInfoModel(key: "hasOnlineStore", value: true)
         ]
         let store = StoreModel(id: 1, name: "名前", infos: infos)
-        return [store]
+        return [store, store, store, store, store]
     }
 }
