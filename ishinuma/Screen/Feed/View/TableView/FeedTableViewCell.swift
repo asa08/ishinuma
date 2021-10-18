@@ -34,12 +34,14 @@ class FeedTableViewCell: UITableViewCell {
     }
     
     private func setInfoStackView(_ store: StoreModel) {
+        infoStackView.spacing = 6
         infoStackView.arrangedSubviews.forEach({
             infoStackView.removeArrangedSubview($0)
             $0.removeFromSuperview()
         })
-        store.infos.forEach({ _ in
-            
+        store.infos.forEach({ info in
+            infoStackView.addArrangedSubview(FeedTableViewCellInfos(info))
         })
+        infoStackView.addArrangedSubview(UIView())
     }
 }

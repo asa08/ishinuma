@@ -47,7 +47,7 @@ enum StoreInfoKey: String {
         case .store: return .RGB(0xf08080)
         case .onlineStore: return .RGB(0xf08080)
         case .instagram: return .RGB(0xf08080)
-        default: return .white
+        default: return .RGB(0xf08080)
         }
     }
 }
@@ -55,9 +55,8 @@ enum StoreInfoKey: String {
 extension StoreModel {
     static func get() -> [StoreModel] {
         let infos = [
-            StoreInfoModel(key: "hasStore", value: true),
-            StoreInfoModel(key: "hasAppraiser", value: true),
-            StoreInfoModel(key: "hasOnlineStore", value: true)
+            StoreInfoModel(key: "store", value: true),
+            StoreInfoModel(key: "appraiser", value: true)
         ]
         let store = StoreModel(id: 1, name: "名前", infos: infos)
         return [store, store, store, store, store]
