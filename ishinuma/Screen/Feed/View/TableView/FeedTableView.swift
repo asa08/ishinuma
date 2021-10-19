@@ -14,6 +14,7 @@ class FeedTableView: UITableView {
     private var cancellables = Set<AnyCancellable>()
     
     func initSelf(viewModel: FeedViewModel) {
+        backgroundColor = .black
         self.viewModel = viewModel
         setTableView()
         viewModel.output.stores.sink(receiveValue: { [weak self] _ in
@@ -25,8 +26,8 @@ class FeedTableView: UITableView {
         register(R.nib.feedTableViewCell)
         delegate = self
         dataSource = self
-        estimatedRowHeight = 55
-        rowHeight = 55
+        estimatedRowHeight = 60
+        rowHeight = 60
     }
 }
 

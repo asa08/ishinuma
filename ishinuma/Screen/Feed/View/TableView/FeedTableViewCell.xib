@@ -24,7 +24,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bga-E7-EtZ">
-                        <rect key="frame" x="63" y="9" width="339" height="21"/>
+                        <rect key="frame" x="63" y="7" width="339" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -37,8 +37,8 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="mAA-gG-Mqh" firstAttribute="top" secondItem="Bga-E7-EtZ" secondAttribute="bottom" id="ICk-zA-Dxu"/>
-                    <constraint firstAttribute="centerY" secondItem="Bga-E7-EtZ" secondAttribute="bottom" id="JHh-ze-jS8"/>
+                    <constraint firstItem="mAA-gG-Mqh" firstAttribute="top" secondItem="Bga-E7-EtZ" secondAttribute="bottom" constant="2" id="ICk-zA-Dxu"/>
+                    <constraint firstAttribute="centerY" secondItem="Bga-E7-EtZ" secondAttribute="bottom" constant="2" id="JHh-ze-jS8"/>
                     <constraint firstItem="mAA-gG-Mqh" firstAttribute="leading" secondItem="VxS-Z4-9Da" secondAttribute="trailing" constant="12" id="Kbu-6S-zK1"/>
                     <constraint firstAttribute="trailing" secondItem="mAA-gG-Mqh" secondAttribute="trailing" constant="12" id="Vq3-dP-RHM"/>
                     <constraint firstAttribute="trailing" secondItem="Bga-E7-EtZ" secondAttribute="trailing" constant="12" id="e4o-2i-CGY"/>
@@ -52,7 +52,7 @@
                 <outlet property="infoStackView" destination="mAA-gG-Mqh" id="5zZ-qO-EO5"/>
                 <outlet property="nameLabel" destination="Bga-E7-EtZ" id="ox3-7g-o8l"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="163.72767857142856"/>
+            <point key="canvasLocation" x="137.68115942028987" y="163.39285714285714"/>
         </tableViewCell>
     </objects>
 </document>

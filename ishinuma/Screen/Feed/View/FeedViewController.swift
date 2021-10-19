@@ -16,12 +16,23 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigation()
+        view.backgroundColor = .black
         guard let viewModel = viewModel else { return }
         tableView.initSelf(viewModel: viewModel)
     }
     
     private func setNavigation() {
-        navigationController?.view.backgroundColor = .white
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.largeTitleDisplayMode = .automatic
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithDefaultBackground()
+        appearance.backgroundColor = .black
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        // Large Title 用 NavigationBar の色設定
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        // 通常の NavigationBar の色設定
+        navigationController?.navigationBar.standardAppearance = appearance
         title = "Stores"
     }
     

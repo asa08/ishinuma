@@ -14,6 +14,7 @@ class FeedTableViewCell: UITableViewCell {
     @IBOutlet weak var infoStackView: UIStackView!
     
     func initSelf(store: StoreModel) {
+        backgroundColor = .RGBA(0xffffff, 0.1)
         setIconImageView(store)
         setNameLabel(store)
         setInfoStackView(store)
@@ -29,7 +30,7 @@ class FeedTableViewCell: UITableViewCell {
     
     private func setNameLabel(_ store: StoreModel) {
         nameLabel.font = .systemFont(ofSize: 15)
-        nameLabel.textColor = .darkGray
+        nameLabel.textColor = .white
         nameLabel.text = store.name
     }
     
