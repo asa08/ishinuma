@@ -9,36 +9,36 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedTableViewCell" rowHeight="60" id="ccs-JY-pPq" customClass="FeedTableViewCell" customModule="ishinuma" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedTableViewCell" rowHeight="65" id="ccs-JY-pPq" customClass="FeedTableViewCell" customModule="ishinuma" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ccs-JY-pPq" id="6oM-Vj-X9g">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VxS-Z4-9Da">
-                        <rect key="frame" x="16" y="12.5" width="35" height="35"/>
+                        <rect key="frame" x="16" y="15" width="35" height="35"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="35" id="ON8-fO-Vju"/>
                             <constraint firstAttribute="width" constant="35" id="i8q-0r-2V0"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bga-E7-EtZ">
-                        <rect key="frame" x="63" y="7" width="339" height="21"/>
+                        <rect key="frame" x="63" y="7.5" width="339" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mAA-gG-Mqh">
-                        <rect key="frame" x="63" y="30" width="339" height="20"/>
+                        <rect key="frame" x="63" y="34.5" width="339" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="eB2-5E-ocN"/>
                         </constraints>
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="mAA-gG-Mqh" firstAttribute="top" secondItem="Bga-E7-EtZ" secondAttribute="bottom" constant="2" id="ICk-zA-Dxu"/>
-                    <constraint firstAttribute="centerY" secondItem="Bga-E7-EtZ" secondAttribute="bottom" constant="2" id="JHh-ze-jS8"/>
+                    <constraint firstItem="mAA-gG-Mqh" firstAttribute="top" secondItem="VxS-Z4-9Da" secondAttribute="centerY" constant="2" id="ICk-zA-Dxu"/>
+                    <constraint firstAttribute="centerY" secondItem="Bga-E7-EtZ" secondAttribute="bottom" constant="4" id="JHh-ze-jS8"/>
                     <constraint firstItem="mAA-gG-Mqh" firstAttribute="leading" secondItem="VxS-Z4-9Da" secondAttribute="trailing" constant="12" id="Kbu-6S-zK1"/>
                     <constraint firstAttribute="trailing" secondItem="mAA-gG-Mqh" secondAttribute="trailing" constant="12" id="Vq3-dP-RHM"/>
                     <constraint firstAttribute="trailing" secondItem="Bga-E7-EtZ" secondAttribute="trailing" constant="12" id="e4o-2i-CGY"/>
@@ -52,7 +52,7 @@
                 <outlet property="infoStackView" destination="mAA-gG-Mqh" id="5zZ-qO-EO5"/>
                 <outlet property="nameLabel" destination="Bga-E7-EtZ" id="ox3-7g-o8l"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="163.39285714285714"/>
+            <point key="canvasLocation" x="137.68115942028987" y="161.71875"/>
         </tableViewCell>
     </objects>
 </document>

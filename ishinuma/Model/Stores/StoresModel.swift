@@ -59,6 +59,6 @@ extension StoreModel {
             StoreInfoModel(key: "appraiser", value: true)
         ]
         let store = StoreModel(id: 1, name: "名前", infos: infos)
-        return [store, store, store, store, store]
+        return [store, store, store, store, store, store, store, store, store, store, store, store, store, store, store]
     }
 }

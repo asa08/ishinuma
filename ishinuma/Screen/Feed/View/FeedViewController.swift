@@ -26,7 +26,7 @@ class FeedViewController: UIViewController {
         navigationItem.largeTitleDisplayMode = .automatic
         let appearance = UINavigationBarAppearance()
         appearance.configureWithDefaultBackground()
-        appearance.backgroundColor = .black
+        appearance.backgroundColor = .RGBA(0x000000, 0.9)
         appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
         appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
         // Large Title 用 NavigationBar の色設定

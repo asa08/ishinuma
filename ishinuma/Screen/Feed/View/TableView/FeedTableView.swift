@@ -26,8 +26,8 @@ class FeedTableView: UITableView {
         register(R.nib.feedTableViewCell)
         delegate = self
         dataSource = self
-        estimatedRowHeight = 60
-        rowHeight = 60
+        estimatedRowHeight = 65
+        rowHeight = 65
     }
 }
 
