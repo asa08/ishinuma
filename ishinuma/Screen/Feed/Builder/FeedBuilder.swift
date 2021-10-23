@@ -10,8 +10,8 @@ import Foundation
 class FeedBuilder {
     func build() -> FeedViewController {
         let controller = FeedViewController()
-        let wireframe = FeedRouter()
-        let viewModel = FeedViewModel(wierframe: wireframe)
+        let wireframe = FeedRouter(viewController: controller)
+        let viewModel = FeedViewModel(wireframe: wireframe)
         wireframe.viewController = controller
         controller.initSelf(viewModel)
         return controller

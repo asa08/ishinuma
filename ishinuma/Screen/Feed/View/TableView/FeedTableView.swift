@@ -32,6 +32,10 @@ class FeedTableView: UITableView {
 }
 
 extension FeedTableView: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel?.input.transitDetail()
+    }
     
 }
 

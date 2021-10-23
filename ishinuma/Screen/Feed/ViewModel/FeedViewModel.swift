@@ -10,7 +10,7 @@ import Combine
 
 // MARK: Input
 protocol FeedViewModelInputs {
-    
+    func transitDetail()
 }
 
 // MARK: Outputs
@@ -30,14 +30,18 @@ class FeedViewModel: FeedViewModelType, FeedViewModelInputs, FeedViewModelOutput
     var output: FeedViewModelOutputs { return self }
     var stores = CurrentValueSubject<[StoreModel], Never>([])
     
-    let wierframe: FeedWireframe
+    let wireframe: FeedWireframe
     
-    init(wierframe: FeedWireframe) {
-        self.wierframe = wierframe
+    init(wireframe: FeedWireframe) {
+        self.wireframe = wireframe
         get()
     }
     
     private func get() {
         stores.value = StoreModel.get()
+    }
+    
+    func transitDetail() {
+        wireframe.transitDetail()
     }
 }
