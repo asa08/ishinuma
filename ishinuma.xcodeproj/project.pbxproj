@@ -16,6 +16,10 @@
 		8E1DD72726F0FD64000718E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1DD72526F0FD64000718E5 /* LaunchScreen.storyboard */; };
 		8E1DD73226F0FD65000718E5 /* ishinumaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DD73126F0FD65000718E5 /* ishinumaTests.swift */; };
 		8E1DD73D26F0FD65000718E5 /* ishinumaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1DD73C26F0FD65000718E5 /* ishinumaUITests.swift */; };
+		8E702884272457FB0004D7FC /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E702883272457FB0004D7FC /* MainTabBarController.swift */; };
+		8E70288927245B930004D7FC /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E70288827245B930004D7FC /* EventViewController.swift */; };
+		8E70288B27245C790004D7FC /* EventBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E70288A27245C790004D7FC /* EventBuilder.swift */; };
+		8E70288F27245D6E0004D7FC /* MainTabBarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E70288E27245D6E0004D7FC /* MainTabBarBuilder.swift */; };
 		8E80FC5426F9AA4100D51803 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E80FC5326F9AA4100D51803 /* FeedViewController.xib */; };
 		8E80FC5A26F9AE3C00D51803 /* FeedBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E80FC5926F9AE3C00D51803 /* FeedBuilder.swift */; };
 		8E8236CC271C5BA90054A4EE /* FeedTableViewCellInfos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8236CB271C5BA90054A4EE /* FeedTableViewCellInfos.swift */; };
@@ -72,6 +76,10 @@
 		8E1DD73826F0FD65000718E5 /* ishinumaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ishinumaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1DD73C26F0FD65000718E5 /* ishinumaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ishinumaUITests.swift; sourceTree = "<group>"; };
 		8E1DD73E26F0FD65000718E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E702883272457FB0004D7FC /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		8E70288827245B930004D7FC /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		8E70288A27245C790004D7FC /* EventBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBuilder.swift; sourceTree = "<group>"; };
+		8E70288E27245D6E0004D7FC /* MainTabBarBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarBuilder.swift; sourceTree = "<group>"; };
 		8E80FC5326F9AA4100D51803 /* FeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 		8E80FC5926F9AE3C00D51803 /* FeedBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedBuilder.swift; sourceTree = "<group>"; };
 		8E8236CB271C5BA90054A4EE /* FeedTableViewCellInfos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCellInfos.swift; sourceTree = "<group>"; };
@@ -187,10 +195,62 @@
 			path = ishinumaUITests;
 			sourceTree = "<group>";
 		};
+		8E702882272457B70004D7FC /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8E70288C27245D360004D7FC /* Builder */,
+				8E70288D27245D550004D7FC /* View */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		8E70288527245B3B0004D7FC /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				8E70288627245B6D0004D7FC /* Builder */,
+				8E70288727245B730004D7FC /* View */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		8E70288627245B6D0004D7FC /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				8E70288A27245C790004D7FC /* EventBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		8E70288727245B730004D7FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E70288827245B930004D7FC /* EventViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E70288C27245D360004D7FC /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				8E70288E27245D6E0004D7FC /* MainTabBarBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		8E70288D27245D550004D7FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E702883272457FB0004D7FC /* MainTabBarController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8E80FC5526F9AA4600D51803 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				8E702882272457B70004D7FC /* TabBar */,
 				8E80FC5626F9AA5200D51803 /* Feed */,
+				8E70288527245B3B0004D7FC /* Event */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -583,17 +643,21 @@
 				8E8A1F04270CA98500D8EDEA /* FeedTableViewCell.swift in Sources */,
 				8E1DD71F26F0FD64000718E5 /* FeedViewController.swift in Sources */,
 				8E8A1EEA270844CB00D8EDEA /* StoresModel.swift in Sources */,
+				8E70288927245B930004D7FC /* EventViewController.swift in Sources */,
 				8E8A1EEC2708483B00D8EDEA /* FeedViewModel.swift in Sources */,
 				8E8A1EEE27084B1300D8EDEA /* FeedRouter.swift in Sources */,
+				8E70288B27245C790004D7FC /* EventBuilder.swift in Sources */,
 				8E8A1F0B270DE79100D8EDEA /* R.generated.swift in Sources */,
 				8E1DD71B26F0FD64000718E5 /* AppDelegate.swift in Sources */,
 				8EA94D332711CD1E00ED3EAC /* UIColor+Extension.swift in Sources */,
 				8E8A1EFC270B45B100D8EDEA /* Combine+UITextView.swift in Sources */,
 				8E1DD71D26F0FD64000718E5 /* SceneDelegate.swift in Sources */,
+				8E70288F27245D6E0004D7FC /* MainTabBarBuilder.swift in Sources */,
 				8E80FC5A26F9AE3C00D51803 /* FeedBuilder.swift in Sources */,
 				8E8236CC271C5BA90054A4EE /* FeedTableViewCellInfos.swift in Sources */,
 				8E8A1EF9270B45B100D8EDEA /* Combine+TapGesture.swift in Sources */,
 				8E8A1F02270CA8C100D8EDEA /* FeedTableView.swift in Sources */,
+				8E702884272457FB0004D7FC /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

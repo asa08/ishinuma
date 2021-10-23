@@ -16,7 +16,6 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigation()
-        view.backgroundColor = .black
         guard let viewModel = viewModel else { return }
         tableView.initSelf(viewModel: viewModel)
     }
@@ -26,7 +25,7 @@ class FeedViewController: UIViewController {
         navigationItem.largeTitleDisplayMode = .automatic
         let appearance = UINavigationBarAppearance()
         appearance.configureWithDefaultBackground()
-        appearance.backgroundColor = .RGBA(0x000000, 0.9)
+        appearance.backgroundColor = .black
         appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
         appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
         // Large Title 用 NavigationBar の色設定
