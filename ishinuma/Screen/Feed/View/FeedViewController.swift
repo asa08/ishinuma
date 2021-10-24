@@ -32,7 +32,7 @@ class FeedViewController: UIViewController {
         navigationController?.navigationBar.scrollEdgeAppearance = appearance
         // 通常の NavigationBar の色設定
         navigationController?.navigationBar.standardAppearance = appearance
-        title = "Stores"
+        title = "ホーム"
     }
     
     func initSelf(_ viewModel: FeedViewModel) {
