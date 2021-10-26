@@ -18,7 +18,7 @@ class MainTabBarController: UITabBarController {
     private func setTab() {
         view.backgroundColor = .black
         let feedController = UINavigationController(rootViewController: FeedBuilder().build())
-        let eventController = EventBuilder().build()
+        let eventController = UINavigationController(rootViewController: EventBuilder().build())
         viewControllers = [feedController, eventController]
     }
     
@@ -34,7 +34,9 @@ class MainTabBarController: UITabBarController {
         for item in items {
             item.imageInsets = UIEdgeInsets(top: 12, left: 0, bottom: 12, right: 0)
         }
+        items[0].title = "ホーム"
         items[0].image = R.image.tab_home()
+        items[1].title = "イベント"
         items[1].image = R.image.tab_event()
     }
 }
