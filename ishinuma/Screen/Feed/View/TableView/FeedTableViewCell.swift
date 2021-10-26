@@ -41,7 +41,7 @@ class FeedTableViewCell: UITableViewCell {
             $0.removeFromSuperview()
         })
         store.infos.forEach({ info in
-            infoStackView.addArrangedSubview(FeedTableViewCellInfos(info))
+            infoStackView.addArrangedSubview(FeedTableViewCellInfosView(info))
         })
         infoStackView.addArrangedSubview(UIView())
     }

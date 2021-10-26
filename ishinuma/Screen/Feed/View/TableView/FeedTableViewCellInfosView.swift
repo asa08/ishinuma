@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class FeedTableViewCellInfos: UIView {
+class FeedTableViewCellInfosView: UIView {
     
     private let baseView: UIView = {
         let view = UIView()
