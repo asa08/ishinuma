@@ -20,7 +20,7 @@ protocol EventViewModelType {
     var output: EventViewModelInputs { get }
 }
 
-class EventViewModel {
+class EventViewModel: EventViewModelType, EventViewModelInputs, EventViewModelOutputs {
     
     // MARK: Properties
     var input: EventViewModelInputs { return self }
