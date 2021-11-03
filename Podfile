@@ -6,7 +6,6 @@ target 'ishinuma' do
   use_frameworks!
   inhibit_all_warnings!
   
-  pod 'Firebase/Firestore'
   pod 'Firebase/Analytics'
   pod 'R.swift'
 
