@@ -17,7 +17,7 @@ protocol EventViewModelOutputs {
 
 protocol EventViewModelType {
     var input: EventViewModelInputs { get }
-    var output: EventViewModelInputs { get }
+    var output: EventViewModelOutputs { get }
 }
 
 class EventViewModel: EventViewModelType, EventViewModelInputs, EventViewModelOutputs {
